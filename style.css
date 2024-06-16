@@ -1,0 +1,119 @@
+:root {
+   --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827; 
+  --grey: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --light: #eee;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
+}
+body {
+  background-color:#ffd4d7;
+}
+
+.Todolist {
+  width: 400px;
+  margin: auto;
+}
+
+h2 {
+  margin: 20px 0;
+  color: var(--grey);
+  font-weight: 300;
+}
+
+#input {
+  width: 300px;
+  background-color: #c67b9e;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  color: var(--light);
+}
+
+#input::placeholder {
+  color: var(--light);
+}
+span {
+  padding: 7px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  transition: 0.4s;
+}
+span:hover {
+  opacity: 0.8;
+}
+span:active {
+  opacity: 0.8;
+}
+.list {
+  width: 400px;
+  margin: auto;
+}
+@media screen and (max-width: 600px) {
+  .list {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+h4 {
+  margin: 20px 0;
+  color: var(--grey);
+  font-weight: 600;
+}
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+button {
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 8px;
+  transition: 0.4s;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+.edit {
+  color: rgb(76, 71, 71)
+ 
+}
+.delete {
+  color: rgb(76, 71, 71);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c67b9e	;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--light);
+  margin-bottom: 16px;
+}
+
+.task-title {
+  margin-left: 5px;
+  color: #fff;
+  font-size: 20px;
+}
